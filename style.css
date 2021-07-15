@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #F3F3FB;
+    padding:0;     
+    min-height: 100vh;    
+  
+}
+
+.Main-body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+
+.hide{
+    visibility: hidden;
+}
+
+.contact-box {
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    border-radius: 30px;
+    padding: 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.closeBtn .close {
+    padding: 10px 15px;
+    margin-left: 93%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    border-radius: 50%;
+    border: 1px solid rgb(195, 195, 195);
+    background-color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.closeBtn .close:hover {
+    color: red;
+    border: 1px solid red;
+    opacity: 0.7;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.contact-main {
+    text-align: center;
+}
+
+.contact-main input, select {
+    width: 80%;
+    padding: 20px 5px;
+    margin-bottom: 20px ;
+    border:0;
+    outline: none;
+    border-bottom: 1px solid #cbc9cf;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+
+.contact-main ::placeholder {
+    font-weight: bold;
+    color: #888888;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-main select {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.contact-main textarea {
+    width: 90%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #cbc9cf;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.contact-footer {
+    text-align: center;
+}
+
+.contact-footer button {
+    background-color: #171736;
+    color: white;
+    width: 90%;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-footer button:hover {
+    border: 2px solid #171736;
+    background-color: white;
+    color: #171736;
+    
+}
+
+.or {
+    margin: 0 60px;
+}
+
+.socialLinks-box {
+    background-color: white;
+    width: 600px;
+    height: 200px;
+    border-radius: 30px;
+    padding: 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+.sll-header{
+    margin-top: 30px;
+}
+.sll-main i {
+    font-size: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.sll-main a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.fa-instagram-square {
+    transition: 0.3s;
+}
+
+.sll-main .fa-instagram-square:hover {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.sll-main .facebook:hover {
+    color: #4267B2;
+}
+.sll-main .twit:hover {
+    color: #1DA1F2;
+}
+.sll-main .linkd:hover {
+    color: #2867B2;
+}
+
+.main-footer {
+    background-color: #171736;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-top: -77px;
+}
+
+
+@media only screen and (max-width: 1410px) {
+    .Main-body {
+        min-height: 100vh;  
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-box{
+        margin-top: 20px;
+    }
+
+    .socialLinks-box {
+        margin-bottom: 20px;
+    }
+    .main-footer {
+        margin-top: -2px;
+    }
+  }
+
+  @media only screen and (max-width: 610px){
+    .contact-box {
+        background-color: white;
+        width: 400px;
+        height: 700px;
+        border-radius: 30px;
+        padding: 10px 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 20px;
+    }
+    .socialLinks-box {
+        background-color: white;
+        width: 400px;
+        height: 200px;
+        border-radius: 30px;
+        padding: 10px 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-align: center;
+    }
+    .sll-header{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .sll-main i {
+        font-size: 30px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    .sll-main a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .main-footer {
+        margin-top: -5px;
+    }
+  }
+
+  @media only screen and (max-width: 610px){
+    .contact-box {
+        background-color: white;
+        width: 350px;
+        height: 700px;
+        border-radius: 30px;
+        padding: 5px 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .socialLinks-box {
+        background-color: white;
+        width: 350px;
+        height: 150px;
+        border-radius: 30px;
+        padding: 10px 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-align: center;
+    }
+    .sll-header{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .sll-main i {
+        font-size: 25px;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    .sll-main a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+  }
